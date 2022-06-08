@@ -1,60 +1,82 @@
-
-.login-box{
+.login-box {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    background: grba(0,0,0,.5);
-    box-shadow: 0 15px 25px rgba(0,0,0,.6);
-    box-sizing: border-box;
-    border-radius: 10px;
     width: 400px;
     padding: 40px;
-}
+    transform: translate(-50%, -50%);
+    background: rgba(87, 86, 86, 0.7);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+  }
 
-.login-box h2{
+  
+  .login-box h2 {
     margin: 0 0 30px;
     padding: 0;
+    color: #fff;
     text-align: center;
-}
-.login-box .user-box{
+  }
+  .login-box .user-box {
     position: relative;
-}
-.login-box .user-box input {
+  }
+  
+  .login-box .user-box input {
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
     font-size: 16px;
-    margin-bottom: 30px;
+    color: #fff;
+    margin-bottom: 55px;
     border: none;
-    border-bottom: 1px solid gray;
-    outline: none; /* quita la linea del input al dar click */
+    border-bottom: 1px solid #fff;
+    margin-top: 10px;
+    outline: none;
     background: transparent;
-}
-
-
-.login-box .user-box label {
+  }
+  
+  .login-box .user-box label {
     position: absolute;
     top: 0;
+    left: 0;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 22px;
+    color: #eef60c;
+    font-weight: 100;
     pointer-events: none;
-    transform: translateY(0);
-    transition: all 400ms ease-in-out;
-}
+    transition: 0.5s;
+  }
+  .login-box .user-box input:focus {
+    color: #fff;
+    border-bottom: 1px solid #f2f539;
+  }
 
-.login-box .user-box input:focus, .login-box .user-box:valid {
-    border-bottom-color: rgb(232, 246, 41);
-}
+  .login-box .user-box input:focus + label {
+    color: #fbfbf4;
+    top: -23px;
+  }
 
- 
-.login-box .user-box input:focus + label{
-    color: #dd676b;
-    font-size: 15px;
-    transform: translateY(-25px);
+  .myButton {
+	box-shadow:inset 0px 1px 3px 0px #d8e6e4;
+    width: 100%;
+	
+    background-color: #fbee01;
+	border-radius:5px;
+	border:1px solid #99a6a2;
+	display:inline-block;
+    color: rgb(255, 255, 255);
+	cursor:pointer;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #c9d4d2;
 }
-
-.login-box .user-box input:valid + label{
-    color: #dd676b;
-    font-size: 15px;
-    transform: translateY(-25px);
+.myButton:hover {
+	background-color:rgb(253, 253, 5);
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }

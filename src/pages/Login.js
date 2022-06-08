@@ -7,22 +7,22 @@ const Login = () =>{
     }
 
     return(
-        <div className='containerLogin'>
-         <div className=' login-box'>
-              <h2>Login</h2>
-            <form onSubmit={submit} >
-              <div className='user-box'>
-               <label>Name </label>
-               <input id='name' type='text' />
-              </div>
-              <div className='user-box'>
-               <label>Password </label>
-               <input id='password' type='text'/>
-              </div>
-            </form>
-          <button>Submit</button>
+      <div className='container-login'>
+       <div className=" login-box">
+       <h2>Login</h2>
+       <form>
+         <div className="user-box">
+           <input id="name" type="text" />
+           <label> Name </label>
          </div>
-        </div>
+         <div className="user-box">
+           <input id="password" type="text"  />
+           <label>Password </label>
+         </div>
+       </form>
+       <button className='myButton'> Submit</button>
+      </div>
+    </div>
     );
 };
 

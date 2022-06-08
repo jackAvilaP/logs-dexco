@@ -1,0 +1,10 @@
+footer{
+    background-image: url('./img/banda-seguridad-3.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    height: 9%;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
