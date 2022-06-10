@@ -9,7 +9,7 @@ const User =()=>{
                         <img src={users}/>
                     </div>
                     <div>
-                        <h2>jakc</h2>
+                        <h2>jackson avila</h2>
                     </div>
                 </nav>
             </header>
