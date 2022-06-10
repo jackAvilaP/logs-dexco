@@ -1,15 +1,4 @@
-.container-login {
-  margin: 0;
-  padding: 0;
-  height: 500px;
-  background-image: url('../img/dexco2.jpg');
-  background-attachment: fixed;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
-}
-
-.login-box {
+.CheckIn-box{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,22 +9,21 @@
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
-
   }
 
   
-  .login-box h1 {
-    margin: 0 0 30px;
+  .CheckIn-box h1 {
+    margin: 0 0 20px;
     padding: 0;
     color: #fff;
     text-align: center;
   }
 
-  .login-box .user-box {
+  .CheckIn-box .CheckInUser-box {
     position: relative;
   }
   
-  .login-box .user-box input {
+  .CheckIn-box .CheckInUser-box input {
     width: 100%;
     padding: 8px 0;
     font-size: 16px;
@@ -43,12 +31,12 @@
     margin-bottom: 55px;
     border: none;
     border-bottom: 1px solid #fff;
-    margin-top: 10px;
+    margin-top: 7px;
     outline: none;
     background-color: transparent;
   }
   
-  .login-box .user-box label {
+  .CheckIn-box .CheckInUser-box label {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,13 +48,13 @@
     transition: 0.5s;
   }
 
-  .login-box .user-box input:focus {
+  .CheckIn-box .CheckInUser-box input:focus {
     color: #fff;
     border-bottom: 1px solid #f2f539;
   }
 
-  .login-box .user-box input:focus + label,
-  .login-box .user-box input:valid + label{
+  .CheckIn-box .CheckInUser-box input:focus + label,
+  .CheckIn-box .CheckInUser-box input:valid + label{
     color: #fbfbf4;
     top: -15px;
     font-size: 18px;

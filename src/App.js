@@ -1,14 +1,14 @@
 import React from 'react';
-import  Login   from './pages/Login';
+import { Login, CheckIn, User } from './components';
+
 import './App.css';
 
 function App() {
+
   return (
     <div className="App">
-      <Login/>
-      <footer>
-      
-      </footer>
+      <User/>
+      <footer/>
     </div>
   );
 }

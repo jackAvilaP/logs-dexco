@@ -1,0 +1,26 @@
+.container-user {
+    display: flex;
+}
+
+table {
+    border:1px solid black;
+}
+
+
+.header-user nav {
+    display: flex;
+    background: black;
+    width: 200px;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.header-user img {
+    height: 100px;
+}
+
+.header-user div h2 {
+    background: blue;
+}
