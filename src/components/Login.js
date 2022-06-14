@@ -1,14 +1,31 @@
-import { useState } from 'react';
+import { useState } from "react";
+
 import '../styles/Login.css';
+import { useForm } from '../Hooks/useForm';
+/*
+
+const {
+  formstate,
+  onResetForm,
+  onInputChange,
+} = useForm({
+  username: '',
+  password: ''
+});
+
+const { username, password } = formstate;
+*/
+
+
 
 const Login = () => {
 
-  const [name, setName] = useState('');
-  const [password, setPassword] = useState();
+  const { formstate, onResetForm, onInputChage, username,
+    password } = useForm({
+      username: "",
+      password: ""
+    });
 
-  const submit = () => {
-
-  }
 
   return (
     <div className='container-login'>
@@ -16,15 +33,15 @@ const Login = () => {
         <h1>Log in</h1>
         <form>
           <div className="user-box">
-            <input id="name" type="text" onChange={(e) => setName(e.target.value)} value={name} required />
+            <input id="name" type="text" name='username' onChange={onInputChage} value={username} required />
             <label> User</label>
           </div>
           <div className="user-box">
-            <input id="password" type="password" onChange={(e) => setPassword(e.target.value)} required />
+            <input id="password" type="password" name='password' onChange={onInputChage} value={password} required />
             <label>Password </label>
           </div>
         </form>
-        <button className='myButton'> Submit</button>
+        <button className='myButton' onClick={onResetForm}> Submit</button>
       </div>
     </div>
   );
