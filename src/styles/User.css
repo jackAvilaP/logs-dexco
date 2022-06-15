@@ -2,14 +2,12 @@
     display: flex;
     margin: 0;
 }
-
-table {
-    border:1px solid black;
-    border-radius: 3px 3px;
-    width: 100%;
+.all-container-user {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
 }
-
-
 .header-user nav {
     display: flex;
     background: #1c1d1f;
@@ -20,12 +18,11 @@ table {
     color: #fff;
 }
 
-
 .header-user img {
     height: 100px;
     margin-top: 30px;
 }
 
-.header-user div h2 {
-    
+thead {
+    color: white;
 }
