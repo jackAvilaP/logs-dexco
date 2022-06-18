@@ -1,21 +1,6 @@
-import { useState } from "react";
 
 import '../styles/Login.css';
 import { useForm } from '../Hooks/useForm';
-/*
-
-const {
-  formstate,
-  onResetForm,
-  onInputChange,
-} = useForm({
-  username: '',
-  password: ''
-});
-
-const { username, password } = formstate;
-*/
-
 
 
 const Login = () => {
